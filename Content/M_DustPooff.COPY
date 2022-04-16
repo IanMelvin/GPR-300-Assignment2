@@ -1,0 +1,69 @@
+Begin Object Class=/Script/Engine.Material Name="M_DustPooff"
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionParticleColor Name="MaterialExpressionParticleColor_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDynamicParameter Name="MaterialExpressionDynamicParameter_0"
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_0"
+      Texture=Texture2D'"/Game/StarterContent/Textures/T_Perlin_Noise_M.T_Perlin_Noise_M"'
+      SamplerType=SAMPLERTYPE_Masks
+      MaterialExpressionEditorX=-208
+      MaterialExpressionEditorY=432
+      MaterialExpressionGuid=C127B8CE4678DDCE8B8A60A9BBA61224
+      Material=Material'"M_DustPooff"'
+   End Object
+   Begin Object Name="MaterialExpressionParticleColor_0"
+      MaterialExpressionEditorX=-32
+      MaterialExpressionEditorY=16
+      MaterialExpressionGuid=D85711A24E60167B5E4E04AC59F7909F
+      Material=Material'"M_DustPooff"'
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_0"
+      MaterialFunction=MaterialFunction'"/Engine/Functions/Engine_MaterialFunctions02/ValueStep.ValueStep"'
+      FunctionInputs(0)=(ExpressionInputId=F3CBB0664A74CBF5223DA1801780D61E,Input=(Expression=MaterialExpressionDynamicParameter'"M_DustPooff:MaterialExpressionDynamicParameter_0"',InputName="Mask Offset Value",Mask=1,MaskR=1))
+      FunctionInputs(1)=(ExpressionInputId=9BFBDA444743026C3EB511BAD6B9B9DD,Input=(OutputIndex=-1,InputName="Number Before White Result"))
+      FunctionInputs(2)=(ExpressionInputId=34EDB9F9477DE66DD75E71842ACD0040,Input=(Expression=MaterialExpressionTextureSample'"M_DustPooff:MaterialExpressionTextureSample_0"',OutputIndex=1,InputName="Gradient",Mask=1,MaskR=1))
+      FunctionOutputs(0)=(ExpressionOutputId=D86550584200CA1F5C4DB89AD09E95D7,Output=(OutputName="Result"))
+      MaterialExpressionEditorX=80
+      MaterialExpressionEditorY=336
+      MaterialExpressionGuid=0C5522D04BA8A1390C135CBA1DC8C699
+      Material=Material'"M_DustPooff"'
+      Outputs(0)=(OutputName="Result")
+   End Object
+   Begin Object Name="MaterialExpressionDynamicParameter_0"
+      ParamNames(0)="Erode"
+      MaterialExpressionEditorX=-192
+      MaterialExpressionEditorY=256
+      MaterialExpressionGuid=FC89F3BF4BA534A491DB97A9F092C89C
+      Material=Material'"M_DustPooff"'
+      Outputs(0)=(OutputName="Erode")
+      Outputs(1)=(OutputName="Param2")
+      Outputs(2)=(OutputName="Param3")
+      Outputs(3)=(OutputName="Param4")
+   End Object
+   BaseColor=(Expression=MaterialExpressionParticleColor'"MaterialExpressionParticleColor_0"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Opacity=(Expression=MaterialExpressionMaterialFunctionCall'"MaterialExpressionMaterialFunctionCall_0"')
+   BlendMode=BLEND_Translucent
+   TwoSided=True
+   bUsedWithNiagaraMeshParticles=True
+   EditorX=432
+   Expressions(0)=MaterialExpressionParticleColor'"MaterialExpressionParticleColor_0"'
+   Expressions(1)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_0"'
+   Expressions(2)=MaterialExpressionDynamicParameter'"MaterialExpressionDynamicParameter_0"'
+   Expressions(3)=MaterialExpressionMaterialFunctionCall'"MaterialExpressionMaterialFunctionCall_0"'
+   bCanMaskedBeAssumedOpaque=True
+   StateId=EF7E31874AA976670C2792BE7D63B7DC
+   CachedExpressionData=(ReferencedTextures=(Texture2D'"/Game/StarterContent/Textures/T_Perlin_Noise_M.T_Perlin_Noise_M"'),FunctionInfos=((StateId=B7C71B914E2BB667772D6CBE2AB55665,Function=MaterialFunction'"/Engine/Functions/Engine_MaterialFunctions01/Gradient/LinearGradient.LinearGradient"'),(StateId=62DC688F43F7E16F0CF5F4868458FADB,Function=MaterialFunction'"/Engine/Functions/Engine_MaterialFunctions02/ValueStep.ValueStep"')),DynamicParameterNames=("Erode","Param2","Param3","Param4"),QualityLevelsUsed=(False,False,False,False))
+   ReferencedTextureGuids(0)=B1B48DC346A48B839A728CBBA9158683
+   TextureStreamingDataVersion=1
+   TextureStreamingData(0)=(SamplingScale=1.000000,UVChannelIndex=0,TextureName="T_Perlin_Noise_M",TextureReference=/Game/StarterContent/Textures/T_Perlin_Noise_M.T_Perlin_Noise_M)
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'"SceneThumbnailInfoWithPrimitive_0"'
+   LightingGuid=F4FB7AED4AC1C47CD120B997F0BB9F5E
+End Object
